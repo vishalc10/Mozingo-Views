@@ -5,6 +5,9 @@ body{
     background: orange;
     height: 0.2em;
 }
+.boxHr{
+    background: #ab8822;
+}
 .greyText{
     color: #5a5a5a;
 }
@@ -14,7 +17,7 @@ body{
 .loginCard{
     margin-top: -4em;
     box-shadow: 2px 2px 15px black;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 8px;
     border-color: #ab8822;
 }
@@ -33,4 +36,7 @@ footer{
 }
 li{
     padding: 0.7em;
+}
+.emailColor{
+    color: #0b5c2a;
 }
