@@ -1,0 +1,36 @@
+body{
+    background: #fcfcfb;
+}
+.hr{
+    background: orange;
+    height: 0.2em;
+}
+.greyText{
+    color: #5a5a5a;
+}
+.yellowText{
+    color: #ab8822;
+}
+.loginCard{
+    margin-top: -4em;
+    box-shadow: 2px 2px 15px black;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    border-color: #ab8822;
+}
+.loginButton{
+    display: block;
+    width: 30%;
+    background: #ab8822;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    color: white;
+}
+footer{
+    text-align: center;
+    margin-top: 4em;
+    color: #ab8822;
+}
+li{
+    padding: 0.7em;
+}
