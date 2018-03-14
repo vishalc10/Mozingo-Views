@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mozingo Lake</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="#home">Home</a>
+            <a href="#Evetns" class="active">Events</a>
+            <a href="#Employee">Employee</a>
+            <a href="#Attendance">Attendance</a>
+            <a href="#Profile">Profile</a>
+            <div>
+                <a class="profileName" href="#">Ashley</a>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!-- Navbar END -->
+        <div align="center">
+            <img class="img-fluid" width="218" height="124" src="logo.png" alt="logo">
+        </div>
+    </header>
+    <!-- Save and other option -->
+    <div class="container" align="center">
+        <ul class="nav" align="center">
+            <li>
+                <a href="#"> Back</a>
+            </li>
+            <li>
+                <a href="#">Save and Close</a>
+            </li>
+            <li>
+                <a href="#">Delete</a>
+            </li>
+            <li>
+                <p>Select</p>
+            </li>
+            <li>
+                <select>
+                    <option value="Select">Select</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h4>Details</h4>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">Event Name</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" placeholder="Event Name" id="example-text-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">Location</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" placeholder="Location" id="example-text-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-datetime-local-input" class="col-2 col-form-label">Start Date</label>
+                    <div class="col-10">
+                        <input class="form-control" type="datetime-local" value="" id="example-datetime-local-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-datetime-local-input" class="col-2 col-form-label">End Date</label>
+                    <div class="col-10">
+                        <input class="form-control" type="datetime-local" value="" id="example-datetime-local-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-3 col-form-label">Assign Employee</label>
+                    <div class="col-9">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Assign Update</button>
+                        <div class="container-fluid modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h5 class="modal-title">Assign Employee</h5>
+                                    </div>
+                                    <div class="modal-body row">
+                                        <div class="col-3">
+                                            <label style="float: left">Assign coordinator</label>
+                                            <ul style="list-style: none; margin: 0; float: left">
+                                                <li>
+                                                    <input type="checkbox"> checkbox 1</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 2</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 3</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <label style="float: left">Bartender</label>
+                                            <ul style="list-style: none; margin: 0; float: left">
+                                                <li>
+                                                    <input type="checkbox"> checkbox 1</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 2</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 3</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <label style="float: left">Maintainance</label>
+                                            <ul style="list-style: none; margin: 0; float: left">
+                                                <li>
+                                                    <input type="checkbox"> checkbox 1</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 2</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 3</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <label style="float: left">HouseKeeping</label>
+                                            <ul style="list-style: none; margin: 0; float: left">
+                                                <li>
+                                                    <input type="checkbox"> checkbox 1</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 2</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 3</li>
+                                                <li>
+                                                    <input type="checkbox"> checkbox 4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn loginButton" data-dismiss="modal">Update</button>
+                                        <button type="button" class="btn loginButton" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h4>People</h4>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-3 col-form-label">Send Mail To</label>
+                    <div class="col-9">
+                        <button type="button" class="btn btn-deafult">Select</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea">Mail Sent To:</label>
+                    <textarea disabled class="form-control" id="exampleTextarea" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea">Notes</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+                </div>
+            </div>
+            <div style="border: 2px solid transparent; border-color:darkgreen" class="col-md-2">
+                <h4>Upcoming Events</h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2012-17 City of Maryville All Rights Reserved 25055 Liberty Road, Maryville, MO 64468</p>
+    </footer>
+</body>
+
+</html>
